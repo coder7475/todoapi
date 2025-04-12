@@ -29,5 +29,5 @@ all_todos = [
 
 
 @api.get("/")
-def index():
+async def index():
     return {"message": "Hello World"}
