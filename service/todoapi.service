@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=admin
 Group=admin
-WorkingDirectory=/home/todoapi
-ExecStart=/home/todoapi/venv/bin/gunicorn -c gunicorn_conf.py main:api
+WorkingDirectory=/home/admin/todoapi
+ExecStart=/home/admin/todoapi/venv/bin/gunicorn -c gunicorn_conf.py main:api
 
 [Install]
 WantedBy=multi-user.target
